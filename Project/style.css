@@ -53,9 +53,8 @@ body {
 }
 
 
-
 .top__info, .right_img {
-    width: 48%;
+    width: 30%;
 }
 
 .title {
@@ -88,10 +87,11 @@ body {
     padding-top: 97px;
     padding-bottom: 96px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: auto;
     margin: 0 auto;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 60px;
 
 }
