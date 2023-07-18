@@ -20,8 +20,8 @@ summary {
 }
 
 .center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
+    padding-left: calc(50% - 172px);
+    padding-right: calc(50% - 172px);
 }
 
 .top {
@@ -32,7 +32,7 @@ summary {
 .header {
     background-color:black;
     fill: #222;
-    min-height: 75px;
+    min-height: 74px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,36 +43,38 @@ summary {
     display: flex;
     align-items: center;
     gap: 41px;
+    padding-left: 16px;
 }
 
 .header__link {
     color: #E8E8E8;
-    margin-top: 26px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 26px;
 }
 
 .header__right { 
     display: flex;
     align-items: center;
     gap: 33px;
+    padding-right: 16px;
 }
 
 .top__content {
-    display: flex;
     background: #F1E4E6;
-    padding-left: calc(50% - 800px);
-    padding-right: calc(50% - 800px);
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.top__img{
-    width: 50%;
+    padding-left: calc(50% - 172px);
+    padding-right: calc(50% - 172px);
+    text-align: center;
+    min-height: 362px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .top__info {
     border-left: 12px solid #F16D7F;
-    padding-left: 16px;
+    gap: 30px;
     margin-top: -6%;
 }
 
@@ -83,7 +85,7 @@ summary {
 .title {
     color: #222;
     font-family: Lato;
-    font-size: 48px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -92,20 +94,21 @@ summary {
 .subtitle {
     color: #222;
     font-family: Lato;
-    font-size: 32px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     line-height: normal;
+    padding-left: 15px;
 }
 
 .sale {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 400px);
     padding-top: 64px;
-    padding-bottom: 96px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    justify-items: stretch;
+    gap: 32px;
 }
 .item__sale {
     position: relative;
@@ -127,15 +130,12 @@ summary {
     align-items: center;
 }
 
-.item__sale__big {
-    min-height: 180px;
-    grid-column: 1 / -1;
-}
 
 .img__sale {
     background-color: rgba(20, 19, 19, 0.7);
     background-blend-mode: overlay;
     width: 100%;
+    filter: brightness(40%);
 }
 
 .sale__text {
@@ -163,8 +163,14 @@ summary {
     background-color: #F8F8F8;
 }
 
+.girl {
+    filter: brightness(0.3);
+    opacity: 0.9;
+}
+
+
 .product__store {
-    padding-bottom: 96px;
+    padding-bottom: 40.61px;
 }
 
 .product {
@@ -237,19 +243,21 @@ summary {
     gap: 16px;
 }
 
-.button__top {
-    
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 85px;
 }
 
 .button__text {
+    display: block;
+    width: 212px;
+    height: 48px;
+    text-align: center;
+    line-height: 45px;
     color: #F26376;
     font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    border: 1px solid #FF6A6A;   
 }
-
-
 
 
