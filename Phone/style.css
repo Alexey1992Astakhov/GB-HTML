@@ -163,6 +163,24 @@ summary {
     background-color: #F8F8F8;
 }
 
+.add__cart {
+    position: absolute;
+    border: 3px solid black;
+    width: 139px;
+    height: 44px;
+    display: none;
+}
+
+.add__cart:hover {
+    display: block;
+}
+
+.product__img:hover {
+    filter: brightness(0.3);
+    opacity: 0.9;
+    display: inline;
+}
+
 .girl {
     filter: brightness(0.3);
     opacity: 0.9;
