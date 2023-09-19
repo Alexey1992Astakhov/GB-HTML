@@ -380,6 +380,13 @@ summary {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.cart__head_heading:hover {
+  color: black;
+  transform: scale(1.01);
 }
 
 .colorText {
@@ -451,6 +458,7 @@ summary {
   right: 4%;
   top: 8%;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .cart__goods__cross path:hover {
@@ -476,6 +484,12 @@ summary {
   font-weight: 300;
   line-height: normal;
   border: 1px solid rgba(74, 74, 74, 0.2901960784);
+  transition: all 0.5s;
+}
+
+.cart__button__btn:hover {
+  background-color: #F16D7F;
+  color: #FFF;
 }
 
 .cart__right {
@@ -508,6 +522,7 @@ summary {
   height: 44px;
   border: 1px solid rgba(74, 74, 74, 0.2901960784);
   padding-left: 16.73px;
+  outline: none;
 }
 
 .cart__form_button {
@@ -523,6 +538,7 @@ summary {
   background: none;
   outline: none;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .cart__form_button:hover {
@@ -572,6 +588,15 @@ summary {
   background-color: #F16D7F;
   border: none;
   transition: all 0.5s;
+  cursor: pointer;
+}
+
+.cart__total__button:hover {
+  box-shadow: 0 0 12px #F16D7F;
+  -moz-box-shadow: 0 0 30px #F16D7F;
+  -o-box-shadow: 0 0 30px #F16D7F;
+  -ms-box-shadow: 0 0 30px #F16D7F;
+  -webkit-box-shadow: 0 0 30px #F16D7F;
 }
 @keyframes tracking-in-contract-bck-bottom {
   0% {
