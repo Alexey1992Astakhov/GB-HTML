@@ -1,29 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .cart__head {
     height: 148px;
     background-color: #F8F3F4;
-    margin-bottom: 96px;
-}
 
-.cart__head_heading {
-    padding-top: 59px;
-    color: $colorSelectSite;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    transition: 0.5s;
-    cursor: pointer;
-}
+    &__heading {
+        padding-top: 59px;
+        color: $colorSelectSite;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: 0.5s;
+        cursor: pointer;
+        width: 194px;
 
-.cart__head_heading:hover {
-    color: black;
-    transform: scale(1.01);
+        &:hover {
+            color: black;
+            transform: scale(1.01);
+        }
+    }
 }
 
 .colorText {
@@ -33,22 +27,23 @@
 .cart {
     display: flex;
     justify-content: space-between;
-}
+    padding-top: 96px;
 
-.cart__goods__item {
-    display: flex;
-    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
-    transition: all 0.5s;
-    position: relative;
-    margin-bottom: 40px;
-}
+    &__goods__item {
+        display: flex;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+        transition: all 0.5s;
+        position: relative;
+        margin-bottom: 40px;
 
-.cart__goods__item:hover {
-    transform: scale(1.1);
-}
+        &:hover {
+            transform: scale(1.01);
+        }
 
-.cart__goods__img {
-    width: 262px;
+        &__img {
+            width: 262px;
+        }
+    }
 }
 
 .cart__goods__desc {
@@ -62,7 +57,7 @@
     color: #5D5D5D;
 }
 
-.desc__title {
+.cart__goods__desc__title {
     color: #222;
     font-size: 24px;
     font-style: normal;
@@ -72,11 +67,11 @@
     margin-bottom: 42px;
 }
 
-.desc__text {
+.cart__goods__desc__text {
     margin-bottom: 6px;
 }
 
-.desc__input {
+.cart__goods__desc__input {
     margin-left: 5px;
     max-width: 47px;
     text-align: center;
@@ -122,6 +117,7 @@
     line-height: normal;
     border: 1px solid #4A4A4A4A;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .cart__button__btn:hover {

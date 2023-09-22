@@ -1,0 +1,158 @@
+.reg {
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    gap: 128px;
+
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__title {
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__input {
+            color: #B1B1B1;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-top: 20px;
+            border: none;
+            outline: 1px solid #4A4A4A;
+            width: 360px;
+            padding: 15px 17px;
+        }
+
+        &__radio-box {
+            padding-top: 34px;
+            padding-bottom: 34px;
+            display: flex;
+            gap: 20px;
+        }
+
+        &__label {
+            color: #000;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            display: flex;
+            position: relative;
+            padding-left: 27px;
+
+            &:before {
+                content: "";
+                width: 17px;
+                height: 17px;
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                border-radius: 50%;
+                border: 1px solid #4A4A4A;
+            }
+
+            &:hover:before {
+                border: 1px solid #F16D7F;
+            }
+        }
+
+        &__radio {
+            display: none;
+
+            &:checked+.reg__form__label:before {
+                border: 1px solid #F16D7F;
+                background: #F16D7F;
+                outline: 2px solid #FFFFFF;
+                outline-offset: -4px;
+            }
+        }
+
+        &__button {
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: #F16D7F;
+            padding: 16px 25px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            border: none;
+            transition: all 0.3;
+
+            &:hover {
+                box-shadow: 0 0 12px #F16D7F;
+                -moz-box-shadow: 0 0 30px #F16D7F;
+                -o-box-shadow: 0 0 30px #F16D7F;
+                -ms-box-shadow: 0 0 30px #F16D7F;
+                -webkit-box-shadow: 0 0 30px #F16D7F;
+            }
+
+        }
+
+        &__text {
+            color: #B1B1B1;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            width: 359px;
+            padding-top: 15px;
+            padding-bottom: 39px;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-bottom: 22px;
+        }
+
+        &__text {
+            min-width: 652px;
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-bottom: 21px;
+        }
+
+        &__ul {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &__li {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            &:before {
+                content: url(../img/V.svg);
+                margin-right: 23px;
+            }
+        }
+    }
+}

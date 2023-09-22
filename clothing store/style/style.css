@@ -361,19 +361,11 @@ summary {
   background-color: #F16D7F;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .cart__head {
   height: 148px;
   background-color: #F8F3F4;
-  margin-bottom: 96px;
 }
-
-.cart__head_heading {
+.cart__head__heading {
   padding-top: 59px;
   color: #F16D7F;
   font-size: 24px;
@@ -382,9 +374,9 @@ summary {
   line-height: normal;
   transition: 0.5s;
   cursor: pointer;
+  width: 194px;
 }
-
-.cart__head_heading:hover {
+.cart__head__heading:hover {
   color: black;
   transform: scale(1.01);
 }
@@ -396,8 +388,8 @@ summary {
 .cart {
   display: flex;
   justify-content: space-between;
+  padding-top: 96px;
 }
-
 .cart__goods__item {
   display: flex;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
@@ -405,12 +397,10 @@ summary {
   position: relative;
   margin-bottom: 40px;
 }
-
 .cart__goods__item:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
-
-.cart__goods__img {
+.cart__goods__item__img {
   width: 262px;
 }
 
@@ -425,7 +415,7 @@ summary {
   color: #5D5D5D;
 }
 
-.desc__title {
+.cart__goods__desc__title {
   color: #222;
   font-size: 24px;
   font-style: normal;
@@ -435,11 +425,11 @@ summary {
   margin-bottom: 42px;
 }
 
-.desc__text {
+.cart__goods__desc__text {
   margin-bottom: 6px;
 }
 
-.desc__input {
+.cart__goods__desc__input {
   margin-left: 5px;
   max-width: 47px;
   text-align: center;
@@ -485,6 +475,7 @@ summary {
   line-height: normal;
   border: 1px solid rgba(74, 74, 74, 0.2901960784);
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .cart__button__btn:hover {
@@ -597,6 +588,144 @@ summary {
   -o-box-shadow: 0 0 30px #F16D7F;
   -ms-box-shadow: 0 0 30px #F16D7F;
   -webkit-box-shadow: 0 0 30px #F16D7F;
+}
+
+.reg {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  gap: 128px;
+}
+.reg__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.reg__form__title {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.reg__form__input {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 20px;
+  border: none;
+  outline: 1px solid #4A4A4A;
+  width: 360px;
+  padding: 15px 17px;
+}
+.reg__form__radio-box {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  display: flex;
+  gap: 20px;
+}
+.reg__form__label {
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  position: relative;
+  padding-left: 27px;
+}
+.reg__form__label:before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  border-radius: 50%;
+  border: 1px solid #4A4A4A;
+}
+.reg__form__label:hover:before {
+  border: 1px solid #F16D7F;
+}
+.reg__form__radio {
+  display: none;
+}
+.reg__form__radio:checked + .reg__form__label:before {
+  border: 1px solid #F16D7F;
+  background: #F16D7F;
+  outline: 2px solid #FFFFFF;
+  outline-offset: -4px;
+}
+.reg__form__button {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #F16D7F;
+  padding: 16px 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border: none;
+  transition: all 0.3;
+}
+.reg__form__button:hover {
+  box-shadow: 0 0 12px #F16D7F;
+  -moz-box-shadow: 0 0 30px #F16D7F;
+  -o-box-shadow: 0 0 30px #F16D7F;
+  -ms-box-shadow: 0 0 30px #F16D7F;
+  -webkit-box-shadow: 0 0 30px #F16D7F;
+}
+.reg__form__text {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 359px;
+  padding-top: 15px;
+  padding-bottom: 39px;
+}
+.reg__desc {
+  display: flex;
+  flex-direction: column;
+}
+.reg__desc__title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 22px;
+}
+.reg__desc__text {
+  min-width: 652px;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 21px;
+}
+.reg__desc__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.reg__desc__li {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.reg__desc__li:before {
+  content: url(../img/V.svg);
+  margin-right: 23px;
 }
 @keyframes tracking-in-contract-bck-bottom {
   0% {
