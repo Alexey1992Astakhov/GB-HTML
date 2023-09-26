@@ -1,27 +1,5 @@
 $colorSelectSite: #F16D7F;
 
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-summary {
-    display: block;
-}
-
 .center {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
@@ -133,8 +111,11 @@ summary {
     margin-bottom: 129px;
     margin-right: 294px;
     margin-left: 292px;
+    position: relative;
+    background-color: #FFF;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.13);
 
-    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.13) &__catalog {
+    &__title {
         color: $colorSelectSite;
         font-size: 14px;
         font-style: normal;
@@ -171,7 +152,6 @@ summary {
 
     &__price {
         color: #F16D7F;
-        font-family: Lato;
         font-size: 24px;
         font-style: normal;
         font-weight: 300;
@@ -186,25 +166,25 @@ summary {
     &__sort {
         display: flex;
         gap: 23px;
+
+        &__summary {
+            color: #6F6E6E;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
-}
 
-.sort__summary {
-    color: #6F6E6E;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.poster__button {
-    width: 212px;
-    height: 48.406px;
-    flex-shrink: 0;
-    border: 1px solid #EF5B70;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &__button {
+        width: 212px;
+        height: 48.406px;
+        flex-shrink: 0;
+        border: 1px solid #EF5B70;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .cart__pink {
