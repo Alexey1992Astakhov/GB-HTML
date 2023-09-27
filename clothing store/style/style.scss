@@ -113,8 +113,6 @@
     }
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -576,10 +574,26 @@ input[type="checkbox" i] {
     animation: wobble-hor-top 2s ease-in-out both;
 }
 
+
+.text__bot {
+    color: #FBFBFB;
+    text-align: center;
+    font-size: 13.972px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.text__bot:hover {
+    text-shadow: 0 0 26px #FFF0FF, 0 0 7px #FFF0FF, 0 0 55px #f16d7f, 0 0 79px #f16d7f, 0 0 86px #0000FF;
+}
+
 .icons {
     padding-bottom: 28.07px;
     padding-top: 104px;
 }
+
+. path:hover {}
 
 .subscribe {
     background-image: url(/img/subscribe.jpg);

@@ -98,6 +98,13 @@ $colorSelectSite: #F16D7F;
     justify-content: center;
 }
 
+.poster__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 129px;
+}
+
 .poster {
     display: flex;
     flex-wrap: wrap;
@@ -106,12 +113,10 @@ $colorSelectSite: #F16D7F;
     align-items: center;
     justify-content: space-evenly;
     min-height: 601px;
+    min-width: 1141px;
+    top: -15px;
     border: 1px solid #EAEAEA;
     margin: -40px;
-    margin-bottom: 129px;
-    margin-right: 294px;
-    margin-left: 292px;
-    position: relative;
     background-color: #FFF;
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.13);
 
@@ -141,13 +146,11 @@ $colorSelectSite: #F16D7F;
     &__text {
         color: #5E5E5E;
         text-align: center;
-        font-family: Lato;
         font-size: 14px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        width: 555px;
-        height: 51.431px;
+        width: 548px;
     }
 
     &__price {

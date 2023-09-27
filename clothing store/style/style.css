@@ -95,6 +95,13 @@
   justify-content: center;
 }
 
+.poster__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 129px;
+}
+
 .poster {
   display: flex;
   flex-wrap: wrap;
@@ -103,12 +110,10 @@
   align-items: center;
   justify-content: space-evenly;
   min-height: 601px;
+  min-width: 1141px;
+  top: -15px;
   border: 1px solid #EAEAEA;
   margin: -40px;
-  margin-bottom: 129px;
-  margin-right: 294px;
-  margin-left: 292px;
-  position: relative;
   background-color: #FFF;
   box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.13);
 }
@@ -135,13 +140,11 @@
 .poster__text {
   color: #5E5E5E;
   text-align: center;
-  font-family: Lato;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  width: 555px;
-  height: 51.431px;
+  width: 548px;
 }
 .poster__price {
   color: #F16D7F;
@@ -713,11 +716,16 @@
 }
 .filter__sort {
   padding-top: 39px;
+  display: flex;
+  gap: 30px;
+  position: absolute;
 }
 .filter__sort__details {
   width: 360px;
   box-sizing: border-box;
-  padding: 13px 16px 16px;
+  padding-top: 13px;
+  position: relative;
+  z-index: 10;
 }
 .filter__sort__details[open] .filter__sort__head {
   color: #EF5B70;
@@ -728,14 +736,20 @@
 .filter__sort__details[open] {
   background: #FFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  position: absolute;
-  height: 531px;
+}
+.filter__sort__content {
+  background-color: #FFF;
+  padding-top: 0;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
 }
 .filter__sort__summary {
   display: flex;
   align-items: center;
   gap: 11px;
   padding-left: 16px;
+  padding-bottom: 16px;
 }
 .filter__sort__head {
   color: #000;
@@ -745,17 +759,19 @@
   line-height: normal;
 }
 .filter__sort__heading {
-  color: #000;
+  color: #6F6E6E;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   border-left: 5px solid #EF5B70;
-  height: 37px;
   display: flex;
   align-items: center;
   padding: 8px 11px 11px 11px;
   border-bottom: 1px solid #EBEBEB;
+}
+.filter__sort__item {
+  padding-bottom: 18px;
 }
 .filter__sort__item[open] .filter__sort__heading {
   color: #EF5B70;
@@ -764,7 +780,7 @@
   display: flex;
   flex-direction: column;
   gap: 11px;
-  padding: 24px 16px;
+  padding: 24px 16px 0px;
 }
 .filter__sort__link__a {
   color: #6F6E6E;
@@ -772,6 +788,95 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.filter__sort__link__a:hover {
+  color: #EF5B70;
+}
+
+.sorting {
+  padding-top: 12px;
+  display: flex;
+  gap: 27.98px;
+}
+.sorting__details {
+  position: relative;
+  z-index: 10;
+}
+.sorting__summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sorting__check {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.sorting__check {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  accent-color: #EF5B70;
+}
+.sorting__heading {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sorting__box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 11px 9px;
+  position: absolute;
+  left: -9px;
+  top: 22px;
+  z-index: 10;
+}
+
+.catalog__content {
+  padding-top: 65px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 96px;
+}
+.pagination__menu {
+  height: 19px;
+  display: flex;
+  border: 1px solid #EBEBEB;
+  border-radius: 4px;
+  padding: 12px 15px;
+  gap: 23px;
+}
+.pagination__menu:hover {
+  border-color: #EF5B70;
+  transition: all 0.7s;
+}
+.pagination__menu__item {
+  color: #C4C4C4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.pagination__menu__item:hover {
+  color: #EF5B70;
+}
+.pagination__menu__item:hover path {
+  fill: #EF5B70;
+}
+
+.product__content {
+  padding-bottom: 48.5px;
 }
 @keyframes tracking-in-contract-bck-bottom {
   0% {
@@ -1267,6 +1372,19 @@ input[type=checkbox i] {
 
 .advantages {
   animation: wobble-hor-top 2s ease-in-out both;
+}
+
+.text__bot {
+  color: #FBFBFB;
+  text-align: center;
+  font-size: 13.972px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.text__bot:hover {
+  text-shadow: 0 0 26px #FFF0FF, 0 0 7px #FFF0FF, 0 0 55px #f16d7f, 0 0 79px #f16d7f, 0 0 86px #0000FF;
 }
 
 .icons {
