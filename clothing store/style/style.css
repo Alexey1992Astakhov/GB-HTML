@@ -573,6 +573,10 @@
   -webkit-box-shadow: 0 0 30px #F16D7F;
 }
 
+.footer__reg {
+  height: 100%;
+}
+
 .reg {
   display: flex;
   justify-content: space-between;
@@ -879,13 +883,14 @@
   padding-bottom: 48.5px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   .filter__sort {
     gap: 85px;
   }
   .product__content {
     gap: 16px;
     padding-bottom: 10px;
+    display: grid;
   }
   .product__img__last {
     display: none;
