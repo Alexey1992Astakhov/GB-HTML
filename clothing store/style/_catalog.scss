@@ -9,11 +9,11 @@
     }
 
     &__sort__details {
-        width: 360px;
         box-sizing: border-box;
         padding-top: 13px;
         position: relative;
         z-index: 10;
+        min-width: 360px;
 
         &[open] .filter__sort__head {
             color: #EF5B70;
@@ -26,6 +26,7 @@
         &[open] {
             background: #FFF;
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            z-index: 11;
         }
     }
 
@@ -105,7 +106,7 @@
 
     &__details {
         position: relative;
-        z-index: 10;
+        z-index: 9;
     }
 
     &__summary {
@@ -239,5 +240,36 @@
         justify-content: space-between;
         padding-left: 32px;
         padding-right: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .filter__sort {
+        gap: 61.5px;
+    }
+
+    .filter__sort__head {
+        display: none;
+    }
+
+    .filter__sort_burger {
+        width: 37px;
+        height: 25px;
+    }
+
+    .sorting {
+        gap: 23.98px;
+        position: relative;
+        right: 298px;
+        z-index: 10;
+    }
+
+    .sorting__summary {
+        gap: 8px;
+    }
+
+    .sorting__heading {
+        font-size: 12px;
     }
 }

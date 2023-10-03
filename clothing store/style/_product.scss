@@ -70,7 +70,7 @@ $colorSelectSite: #F16D7F;
     gap: 5px;
 }
 
-.top__img {
+.top__img_slider {
     min-height: 777px;
     background-color: #F7F7F7;
     display: flex;
@@ -356,4 +356,123 @@ $colorSelectSite: #F16D7F;
 
 .icon:hover {
     background-color: $colorSelectSite;
+}
+
+@media (max-width: 1024px) {
+
+    .top__img_slider {
+        padding-right: 0px;
+    }
+
+    .poster {
+        min-width: 768px;
+        display: flex;
+        justify-content: flex-start;
+
+        &__title {
+            padding-bottom: 12.1px;
+            padding-top: 65px;
+        }
+
+        &__line {
+            margin-bottom: 12.1px;
+        }
+
+        &__heading {
+            padding-bottom: 48.41px;
+        }
+
+        &__text {
+            padding-bottom: 32.27px;
+        }
+
+        &__price {
+            padding-bottom: 65px;
+        }
+
+        &__greyline {
+            margin-bottom: 65px;
+        }
+
+        &__sort {
+            padding-bottom: 65px;
+        }
+    }
+
+    .product__img_3 {
+        display: none;
+    }
+
+    .product__content {
+        display: grid;
+        gap: 16px;
+        padding-bottom: 129px;
+        grid-template-columns: repeat(auto-fit, 360px);
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .top__img_slider {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .poster {
+        min-width: 100%;
+    }
+
+    .poster__greyline {
+        max-width: 175px;
+    }
+
+    .poster__text {
+        max-width: 326px;
+    }
+
+    .poster__sort__summary {
+        font-size: 10px;
+    }
+
+    .poster__button {
+        margin-bottom: 64.5px;
+    }
+
+    .poster__content {
+        padding-bottom: 64px;
+    }
+
+    .product__content {
+        gap: 0;
+    }
+
+    .top__img_slider {
+        position: relative;
+        max-width: 100%;
+        min-height: 374px;
+    }
+
+    .img__slider {
+        max-width: 88%;
+    }
+
+    .slider__arrow_right {
+        position: absolute;
+        right: 0;
+    }
+
+    .img {
+        max-width: 80%;
+    }
+
+
 }

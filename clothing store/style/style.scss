@@ -194,6 +194,7 @@ input[type="checkbox" i] {
 
 .top {
     position: relative;
+    overflow: hidden;
 }
 
 .header {
@@ -218,11 +219,8 @@ input[type="checkbox" i] {
         min-width: 232px;
         min-height: 634px;
         top: 4.7em;
-        opacity: 0;
-
-        &:hover {
-            opacity: 1;
-        }
+        z-index: 13;
+        transition: right 0.3s;
     }
 }
 
@@ -279,6 +277,18 @@ input[type="checkbox" i] {
     align-items: center;
     gap: 33px;
 }
+
+#header__link__menu {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+
+    &:checked~.header__menu {
+        right: -232px;
+    }
+}
+
+
 
 .header__link__cart {
     position: relative;
@@ -673,7 +683,7 @@ input[type="checkbox" i] {
     background-image: url(/img/subscribe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
 }
 
 .subscribe__img {
@@ -687,7 +697,6 @@ input[type="checkbox" i] {
 
 .desc__subscribe {
     color: #222224;
-    font-family: Lato;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
@@ -699,7 +708,6 @@ input[type="checkbox" i] {
 .title__subscribe {
     color: #222224;
     text-align: center;
-    font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -708,7 +716,6 @@ input[type="checkbox" i] {
 
 .subtitle__subscribe {
     color: #222224;
-    font-family: Lato;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -717,11 +724,11 @@ input[type="checkbox" i] {
 }
 
 .but__email {
-    width: 256px;
+    max-width: 256px;
     height: 49px;
     border: #E1E1E1;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
     background-color: #E1E1E1;
     outline: none;
     color: #222224;
@@ -732,12 +739,12 @@ input[type="checkbox" i] {
 }
 
 .subscribe_button {
-    width: 100px;
+    max-width: 100px;
     height: 49px;
     border: 1px solid #F16D7F;
     background-color: #F16D7F;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
     text-align: center;
     font-size: 14px;
     font-style: normal;
@@ -877,8 +884,21 @@ input[type="checkbox" i] {
 
 @media (max-width: 768px) {
     .center {
-        padding-left: calc(50% - 172px);
-        padding-right: calc(50% - 172px);
+        padding-left: calc(50% - 192px);
+        padding-right: calc(50% - 192px);
+    }
+
+    .header {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .header__link__reg {
+        display: none;
+    }
+
+    .header__link__cart {
+        display: none;
     }
 
     .item__sale__big {
@@ -896,7 +916,7 @@ input[type="checkbox" i] {
         gap: 32px;
     }
 
-    .top__img {
+    .top__img__men {
         display: none;
     }
 
@@ -921,6 +941,35 @@ input[type="checkbox" i] {
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
+        padding-top: 48px;
+        padding-bottom: 81px;
+        gap: 47px;
+    }
+
+    .subtitle__bot {
+        padding-bottom: 0;
+    }
+
+    .icons {
+        padding-top: 0;
+    }
+
+    .subscribe {
+        min-height: 550px;
+        background-position: 20%;
+    }
+
+    .subscribe_button {
+        margin-bottom: 100px;
+    }
+
+    .desc__subscribe {
+        font-size: 18px;
+    }
+
+    .subtitle__subscribe {
+        font-size: 14px;
+        font-weight: 400;
     }
 
     .but__email {
@@ -939,6 +988,14 @@ input[type="checkbox" i] {
         flex-wrap: nowrap;
         min-height: 143px;
         padding-top: 30px;
-        gap: 47px;
+        gap: 5px;
+    }
+
+    .footer__left {
+        padding: 0;
+    }
+
+    .footer__right {
+        padding: 0;
     }
 }
